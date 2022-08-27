@@ -1,4 +1,4 @@
-
+#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   password for git
 CHECK_DIR_CMD = test -d $@ || (echo "\033[31mDirectory $@ doesn't exist\033[0m" && false)
 HELP_CMD = grep -E '^[a-zA-Z_-]+:.*?\#\# .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?\#\# "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 RM_F_CMD = rm -f
